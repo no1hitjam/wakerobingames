@@ -1,0 +1,3 @@
+[submodule "camphorror"]
+	path = camphorror
+	url = https://github.com/no1hitjam/CampMonsterPrototype.git
