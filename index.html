@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8"/>
     <title>Wake Robin Games</title>
     <meta name="description" content="A Portland-based indie games studio.">
     <meta name="author" content="Wake Robin Games">
@@ -55,13 +57,14 @@
         }
     </style>
 </head>
-<body>
-    
+
     <center>
         <img src="img/WakeRobinGamesLogo.png" alt="Wake Robin Games" class="logo">
         <p class="title">WAKE ROBIN <span style="color:#00af3d;">GAMES</span></p>
         <a href="https://twitter.com/wakerobingames">twitter</a> &nbsp; 
         <a href="https://wakerobingames.itch.io/">itch.io</a>
+        <br>
+        <span id="conem"><img src="img/contact.png" alt="contact email address"></span>
         <br>
         <br>
         <p class="section">
@@ -174,5 +177,31 @@
         <br>
         <p>Copyright &copy; 2017</p>
     </center>
+
+    <script type="text/javascript" language="javascript">
+        <!--
+        // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+        // Random encryption key feature coded by Andrew Moulden
+        // This code is freeware provided these four comment lines remain intact
+        // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+        { 
+            coded = "73yzZNlqB23Szw@2S3qT.rNS"
+            key = "izCQfU7TgBpD34S9jtr5sbduqoJ18WOk2YIGv6ReXFZHwlLnhNa0mMxycPEKAV"
+            shift=coded.length
+            link=""
+            for (i=0; i<coded.length; i++) {
+                if (key.indexOf(coded.charAt(i))==-1) {
+                    ltr = coded.charAt(i)
+                    link += (ltr)
+                }
+                else {     
+                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                    link += (key.charAt(ltr))
+                }
+            }
+            document.getElementById("conem").innerHTML = "<a href='mailto:"+link+"'><img src='img/contact.png' alt='contact email address'></a>";
+        }
+        //-->
+    </script>
 </body>
 </html>
